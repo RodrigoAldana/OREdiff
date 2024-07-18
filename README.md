@@ -1,5 +1,5 @@
 # OREdiff
-Optimal Robust Exact numerical differentiation scripts
+Optimal Robust Exact (ORE) numerical differentiation scripts
 
 OREdiff provides scripts for optimal and robust exact numerical differentiation of noisy signals. The project includes implementations in both MATLAB and Python, with testbenches for each version.
 
