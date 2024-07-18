@@ -8,12 +8,12 @@ OREdiff provides scripts for optimal and robust exact numerical differentiation 
 
 ### MATLAB
 To test the MATLAB version, run the following script:
-```matlab
-matlab/diff_testbench.m
+```
+matlab matlab/diff_testbench.m
 ```
 ### Python
 To test the Python version, run:
-```python
-python/diff.py
+```
+python python/diff.py
 ```
 
