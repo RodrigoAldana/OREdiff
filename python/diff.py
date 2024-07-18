@@ -43,13 +43,13 @@ class Differentiator:
         y = (self.buffer[-1] - self.buffer[-lhat]) / (lhat * Delta)
         return y, Nhat
 
-def update_filter(y, input, Delta, gamma=1.96):
-    if abs(input - y) <= gamma * Delta:
-        sat = input - y
-    else:
-        sat = gamma * Delta * np.sign(input - y)
-    ynew = y + sat
-    return ynew
+    def update_filter(self, y, input, Delta, gamma=1.96):
+        if abs(input - y) <= gamma * Delta:
+            sat = input - y
+        else:
+            sat = gamma * Delta * np.sign(input - y)
+        ynew = y + sat
+        return ynew
 
 if __name__ == '__main__':
     np.random.seed(0)
@@ -80,7 +80,7 @@ if __name__ == '__main__':
             print(f"{k / len(t):.2%}")
         input_signal = f[k] + noise[k]
         y_diff[k], Nhat[k] = differentiator.update_diff(input_signal, k, Delta, L)
-        y_filter[k] = update_filter(y_filter[k-1], y_diff[k], Delta)
+        y_filter[k] = differentiator.update_filter(y_filter[k-1], y_diff[k], Delta)
 
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8))
 
@@ -104,4 +104,3 @@ if __name__ == '__main__':
 
     plt.tight_layout()
     plt.show()
-
