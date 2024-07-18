@@ -5,7 +5,7 @@ OREdiff provides scripts for optimal and robust exact numerical differentiation 
 
 If you use this repository in your work, please cite it as:
 ```
-@article{Aldana-Lopez2024,
+@article{OREdiff2024,
   title={Optimal robust exact first-order differentiators with Lipschitz continuous output},
   author={Rodrigo Aldana-Lopez and Richard Seeber and Hernan Haimovich and David Gomez-Gutierrez},
   journal={arXiv preprint arXiv:2404.05863},
