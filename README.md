@@ -5,13 +5,17 @@ OREdiff provides scripts for optimal and robust exact numerical differentiation 
 
 If you use this repository in your work, please cite it as:
 ```
-@article{OREdiff2024,
-  title={Optimal robust exact first-order differentiators with Lipschitz continuous output},
-  author={Rodrigo Aldana-Lopez and Richard Seeber and Hernan Haimovich and David Gomez-Gutierrez},
-  journal={arXiv preprint arXiv:2404.05863},
-  year={2024},
-  url={https://doi.org/10.48550/arXiv.2404.05863}
-}
+@ARTICLE{OREdiff2025,
+  author={Aldana-López, Rodrigo and Seeber, Richard and Haimovich, Hernan and Gómez-Gutiérrez, David},
+  journal={IEEE Transactions on Automatic Control}, 
+  title={Optimal robust exact first-order differentiators with Lipschitz-continuous output}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Noise;Accuracy;Convergence;Robustness;Noise measurement;Tuning;Fault diagnosis;Doppler effect;Vibrations;Upper bound},
+  doi={10.1109/TAC.2025.3555481}}
+
 ```
 
 ## Usage
